@@ -6,15 +6,14 @@ const carouselItems = document.querySelectorAll('[data-js="carousel__item"]')
 
 let currentItemIndex = 0
 
-carouselButtonNext.addEventListener('click', () => {
-  // Esconder todos os slides
+const hideAllSlides = () => {
   carouselItems.forEach(item => {
     item.classList.remove('carousel__item--visible')
     item.classList.add('carousel__item--hidden')
   })
+}
 
-
-  // Mostrar próximo slide
+const showNextSlide = () => {
   if (carouselItems.length - 1 === currentItemIndex) {
     currentItemIndex = 0
     carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
@@ -25,16 +24,9 @@ carouselButtonNext.addEventListener('click', () => {
   currentItemIndex++
   carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
   carouselItems[currentItemIndex].classList.add('carousel__item--visible')  
-})
+}
 
-carouselButtonPrev.addEventListener('click', () => {
-  // Esconder todos os slides
-  carouselItems.forEach(item => {
-    item.classList.remove('carousel__item--visible')
-    item.classList.add('carousel__item--hidden')
-  })
-
-  // Mostrando o slide anterior
+const showPreviousSlide = () => {
   if (currentItemIndex === 0) {
     currentItemIndex += 2
     carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
@@ -45,4 +37,14 @@ carouselButtonPrev.addEventListener('click', () => {
   currentItemIndex--
   carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
   carouselItems[currentItemIndex].classList.add('carousel__item--visible') 
+}
+
+carouselButtonNext.addEventListener('click', () => {
+  hideAllSlides()
+  showNextSlide()
+})
+
+carouselButtonPrev.addEventListener('click', () => {
+  hideAllSlides()
+  showPreviousSlide()
 })
