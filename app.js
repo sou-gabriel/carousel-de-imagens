@@ -14,7 +14,9 @@ const hideAllSlides = () => {
 }
 
 const showNextSlide = () => {
-  if (carouselItems.length - 1 === currentItemIndex) {
+  const isTheLastSlide = carouselItems.length - 1 === currentItemIndex
+
+  if (isTheLastSlide) {
     currentItemIndex = 0
     carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
     carouselItems[currentItemIndex].classList.add('carousel__item--visible')
@@ -27,7 +29,9 @@ const showNextSlide = () => {
 }
 
 const showPreviousSlide = () => {
-  if (currentItemIndex === 0) {
+  const isTheFirstSlide = currentItemIndex === 0
+  
+  if (isTheFirstSlide) {
     currentItemIndex += 2
     carouselItems[currentItemIndex].classList.remove('carousel__item--hidden')
     carouselItems[currentItemIndex].classList.add('carousel__item--visible')  
