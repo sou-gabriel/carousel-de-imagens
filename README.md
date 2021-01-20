@@ -1,4 +1,4 @@
-# Carousel - CJRM
+![Carousel](./carousel.gif)
 
 ### Sobre
 Trata-se de um carousel realizado em JavaScript durante meus estudos no CJRM. 
