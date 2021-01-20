@@ -1,4 +1,4 @@
-![Carousel](./carousel.gif)
+![Demo Carousel](https://github.com/sou-gabriel/Carousel-CJRM/blob/master/carousel.gif)
 
 ### Sobre
 Trata-se de um carousel realizado em JavaScript durante meus estudos no CJRM. 
