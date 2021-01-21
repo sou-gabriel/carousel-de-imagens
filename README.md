@@ -1,12 +1,20 @@
-![Demo Carousel](https://github.com/sou-gabriel/Carousel-CJRM/blob/master/carousel.gif)
+<h1 align="center"> 
+  <img src="https://github.com/sou-gabriel/Carousel-CJRM/blob/master/carousel.gif">
+</h1>
 
-### Sobre
-Trata-se de um carousel realizado em JavaScript durante meus estudos no CJRM. 
 
-### Objetivo
-Aprender e aprimorar ainda mais as minhas habilidades como desenvolvedor em JavaScript.
+## 📕 Índice
+- [Sobre](#-sobre)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Links](#-links)
 
-### Ferramentas
+## 🗒 Sobre
+Trata-se de um carousel realizado com JavaScript puro que foi feito durante meus estudos no CJRM.
+
+## 🚀 Tecnologias utilizadas
 - HTML
 - CSS
 - JavaScript
+
+## 🔗 Links
+- [Aplicação](https://sou-gabriel.github.io/Carousel-CJRM/)
